@@ -206,7 +206,10 @@ section{ position:relative; padding:clamp(4rem,8vw,7rem) 0; }
   background:linear-gradient(180deg, rgba(36,23,18,.2) 0%, rgba(36,23,18,.55) 55%, var(--bg) 92%);
 }
 .hero--photo .hero__bg-photo{ opacity:1; }
-.hero--photo .hero__kicker{ color:var(--gold); }
+/* the real photo already shows "Yesterdays Bar & Grill" as actual building
+   signage — stop stacking our own wordmark text on top of it */
+.hero--photo .hero__wordmark{ display:none; }
+.hero--photo .hero__kicker{ color:var(--gold); margin-bottom:1.4rem; }
 .hero--photo .hero__tagline{ color:#f0dfc8; }
 .hero--photo .hero__tagline strong{ color:var(--gold); }
 .hero--photo .hero__infobar{ color:#ecdcc4; }
