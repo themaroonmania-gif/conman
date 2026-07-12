@@ -556,13 +556,23 @@ section{ position:relative; padding:clamp(4rem,8vw,7rem) 0; }
 .info-row{ display:flex; gap:1rem; align-items:flex-start; }
 .info-row svg{ width:22px; height:22px; stroke:var(--rust); flex:none; margin-top:.2rem; }
 .info-row h4{ font-size:1.05rem; color:var(--ink); margin-bottom:.2rem; font-family:'Work Sans',sans-serif; font-weight:700; letter-spacing:0; }
-.info-row p{ margin:0; font-size:.92rem; }
+.info-row p{ margin:0; font-size:.92rem; color:var(--ink); }
 .info-row a:hover{ color:var(--rust); }
 
-.hours-table{ width:100%; border-collapse:collapse; margin-top:.5rem; }
-.hours-table td{ padding:.5rem 0; border-bottom:1px dotted var(--line-strong); font-size:.92rem; }
-.hours-table td:first-child{ color:var(--ink-dim); }
-.hours-table td:last-child{ text-align:right; font-family:'Rye',serif; letter-spacing:.02em; color:var(--rust); }
+.hours-card{
+  background:var(--bg-card);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:1.2rem 1.4rem;
+  margin-bottom:1.5rem;
+}
+.hours-card h4{ font-family:'Work Sans',sans-serif; font-weight:700; margin-bottom:.2rem; color:var(--ink); }
+.hours-table{ width:100%; border-collapse:collapse; }
+.hours-table td{ padding:.6rem 0; border-bottom:1px dotted var(--line-strong); font-size:.95rem; }
+.hours-table tr:last-child td{ border-bottom:none; }
+.hours-table td:first-child{ color:var(--ink); font-weight:500; }
+.hours-table td:last-child{ text-align:right; font-family:'Rye',serif; letter-spacing:.02em; color:var(--rust); font-size:1.05rem; }
 
 .social-row{ display:flex; gap:.8rem; margin-top:1.5rem; }
 .social-btn{
@@ -579,7 +589,7 @@ section{ position:relative; padding:clamp(4rem,8vw,7rem) 0; }
   display:inline-flex; align-items:center; gap:.4em;
   border:1px solid var(--line-strong); border-radius:999px;
   background:var(--bg-card);
-  padding:.5em 1em; font-size:.85rem; color:var(--ink-dim);
+  padding:.7em 1em; font-size:.85rem; color:var(--ink-dim);
   transition:all .25s ease;
 }
 .ref-chip b{ color:var(--rust); }
